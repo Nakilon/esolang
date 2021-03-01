@@ -26,7 +26,7 @@ File.write "esolangcategories.json", JSON.dump( {
 } )
 
 require "base64"
-File.write "/temp.json", Base64.decode64(ENV["INPUT_SECRET"])
+File.write "/temp.json", Base64.decode64(ENV["SECRET"])
 `gcloud auth activate-service-account --key-file=/temp.json`
 `rm /temp.json`
 `gsutil cp esolangcategories.json gs://esolang.www.nakilon.pro/`
