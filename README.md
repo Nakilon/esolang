@@ -2,13 +2,14 @@
 
 # Esolang categories scraper
 
-This repo is hosting a scheduled Github Action that updates the http://storage.googleapis.com/esolang.www.nakilon.pro/esolangcategories.json (not http://esolang.www.nakilon.pro/... because I didn't add a DNS record) on a daily basis.  
-Source of the webpage is in another repo: https://github.com/Nakilon/www-nakilon-pro/blob/master/www.nakilon.pro/esolang.htm
+This repo is hosting a scheduled Github Action that updates the [esolangcategories.json](http://storage.googleapis.com/esolang.www.nakilon.pro/esolangcategories.json) on a daily basis.  
+Source of the webpage is located in [another repo](https://github.com/Nakilon/www-nakilon-pro/blob/master/www.nakilon.pro/esolang.htm).
 
 ## How it works:
 
-Github Actions runs a Ruby script that scrapes the wiki API and stores it as a JSON file in a public GCS bucket.  
-Then the www.nakilon.pro/esolang.htm JS fetches it.
+* Github Actions runs a Ruby script that scrapes the wiki API and stores it as a JSON file.  
+* JSON file is then uploaded to a public GCS bucket.  
+* Then the www.nakilon.pro/esolang.htm client-side JS fetches it.
 
 ## How it's made:
 
