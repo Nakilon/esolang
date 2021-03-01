@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    json_pure (2.5.1)
+    mediawiki-butt (4.0.1)
+      patron (~> 0.13)
+    patron (0.13.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  json_pure
+  mediawiki-butt
+
+BUNDLED WITH
+   2.1.4

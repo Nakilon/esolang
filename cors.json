@@ -1,0 +1,8 @@
+[
+    {
+      "origin": ["http://www.nakilon.pro"],
+      "method": ["GET"],
+      "responseHeader": ["*"],
+      "maxAgeSeconds": 3600
+    }
+]

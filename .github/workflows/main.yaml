@@ -1,0 +1,11 @@
+on:
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - uses: actions/checkout@v2
+    - run: docker run -e INPUT_SECRET -v $(pwd):/checkout google/cloud-sdk:alpine sh -c "cd checkout && apk add ruby-dev curl-dev build-base ruby-etc && gem install bundler && bundle install && bundle exec ruby main.rb"
+      timeout-minutes: 10
