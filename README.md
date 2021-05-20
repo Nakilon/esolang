@@ -9,7 +9,7 @@ Any accepted change to master branch will take effect on the next day. The whole
 ## GCS bucket integration notes
 
 * create a GCS bucket to give a Service Account the [Object Admin](https://stackoverflow.com/a/61359836/322020) Role in it  
-* paste the `$ base64 < service-account-key.json | pbcopy` as a `SECRET` as a repo's [Github Action var](https://github.com/Nakilon/esolang/settings/secrets/actions)  
+* ~~paste the `$ base64 < service-account-key.json | pbcopy` as a `SECRET` as a repo's [Github Action var](https://github.com/Nakilon/esolang/settings/secrets/actions)~~  
 * `gsutil cors set cors.json gs://esolang.www.nakilon.pro`
 
 ## testing notes
