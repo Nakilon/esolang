@@ -1,4 +1,6 @@
 set -xe
+rm main.sh
+
 git clone https://github.com/Nakilon/esolang.git
 cd esolang
 
