@@ -1,6 +1,10 @@
-# Esolang categories scraper and intersector
+# Esolang categories intersector
 
-This repo is hosting code of a scheduled task that updates the [esolangcategories.json](https://storage.yandexcloud.net/unversioned.www.nakilon.pro/esolangcategories.json) on a daily basis. Source of the [webpage](http://www.nakilon.pro.website.yandexcloud.net/esolang.htm) is located in [another repo](https://github.com/Nakilon/www-nakilon-pro/blob/master/www.nakilon.pro/esolang.htm).
+This repo is hosting code of a scheduled task that scrapes the Esolang Wiki on a daily basis.  
+It makes possible to find languages assigned to several categories at the same time, Esolang Wiki does not currently provide a way to do this.
+![image](https://user-images.githubusercontent.com/2870363/162365163-edaa815f-b7c5-4796-a700-fa4a1248f242.png)
+
+Source of the [webpage](http://www.nakilon.pro.website.yandexcloud.net/esolang.htm) is located in [another repo](https://github.com/Nakilon/www-nakilon-pro/blob/master/www.nakilon.pro/esolang.htm).  
 
 ~~It is running on Github Action...~~ (Github disabled the schedule if there are no commits)  
 ~~It is running on Google Cloud...~~ (xenophobic Google applied sanctions against me for being Russian)  
