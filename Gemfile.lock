@@ -1,6 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    aws-eventstream (1.2.0)
+    aws-sigv4 (1.4.0)
+      aws-eventstream (~> 1, >= 1.0.2)
     json_pure (2.5.1)
     mediawiki-butt (4.0.1)
       patron (~> 0.13)
@@ -10,6 +13,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-sigv4
   json_pure
   mediawiki-butt
 
