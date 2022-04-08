@@ -1,12 +1,10 @@
-**Temporary down/unsupported**
+# Esolang categories scraper and intersector
 
-# Esolang categories scraper
+This repo is hosting code of a scheduled task that updates the [esolangcategories.json](https://storage.yandexcloud.net/unversioned.www.nakilon.pro/esolangcategories.json) on a daily basis. Source of the [webpage](http://www.nakilon.pro.website.yandexcloud.net/esolang.htm) is located in [another repo](https://github.com/Nakilon/www-nakilon-pro/blob/master/www.nakilon.pro/esolang.htm).
 
-This repo is hosting code of a scheduled task that updates the [esolangcategories.json](https://storage.yandexcloud.net/unversioned.www.nakilon.pro/esolangcategories.json) on a daily basis. Source of the [webpage](http://www.nakilon.pro/esolang.htm) is located in [another repo](https://github.com/Nakilon/www-nakilon-pro/blob/master/www.nakilon.pro/esolang.htm).
-
-~~It is running on Github Action...~~ (Github disable the schedule if there are no commits)  
-~~It is running on Google Cloud...~~ (xenophobic Google apply sanctions against me for being Russian)  
-Is it running on Yandex Cloud, utilizing Serverless Containers, "timer" Trigger and Object Storage.
+~~It is running on Github Action...~~ (Github disabled the schedule if there are no commits)  
+~~It is running on Google Cloud...~~ (xenophobic Google applied sanctions against me for being Russian)  
+It is running on Yandex Cloud, utilizing Serverless Containers, "timer" Trigger and Object Storage.
 
 ## Development notes
 
